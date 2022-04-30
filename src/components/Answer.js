@@ -9,6 +9,9 @@ const Answer = ({ answer, selectAnswer, isSelected, isCorrect, checkAnswers }) =
     if(isSelected && !checkAnswers) {
         classes = 'answer-select';
     }
+    if(isCorrect && !isSelected && checkAnswers) {
+        classes = 'answer-correct-not-chosen';
+    }
 
     return (
         <button className={`answer ${classes}`} onClick={() => selectAnswer(answer)}>{answer}</button>

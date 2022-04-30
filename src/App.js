@@ -1,4 +1,6 @@
 import './App.css';
+import blob1 from "./images/blob 5.png"
+import blob2 from "./images/blobs.png"
 import Questions from "./components/Questions"
 import { useState, useEffect } from "react"
 
@@ -50,6 +52,8 @@ function App() {
   return (
     <main className='center'>
       <div className='container'>
+        <img className='top-right-blob' src={blob1} />
+        <img className='bottom-left-blob' src={blob2} />
         {
           !showQuizzes &&
           <div>

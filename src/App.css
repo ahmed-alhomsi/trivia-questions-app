@@ -6,10 +6,12 @@
   --btn-primary: #4D5B9E;
   --background-primary: #4D5B9E;
   --btn-correct: #94D7A2;
+  --btn-correct-not-chosen: #94D7A2;
   --btn-incorrect: #F8BCBC;
   --btn-selected: #D6DBF5;
   --font-weight-primary: 700; 
   --font-weight-secondary: 500;
+  background-color: var(--background-secondary);
 }
 
 *, *::after, *::before {
@@ -28,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 
 button, p {
   font-weight: var(--font-weight-secondary);
+}
+
+hr {
+  margin: 1em 0em;
 }
 
 .center {
@@ -111,11 +117,23 @@ button:hover {
   background-color: var(--btn-correct) !important;
 }
 
+.answer-correct-not-chosen {
+  background-color: var(--btn-correct-not-chosen) !important;
+}
+
 .answer-incorrect {
   background-color: var(--btn-incorrect) !important;
   color:rgba(77, 91, 158, 0.753) !important;
 }
 
-hr {
-  margin: 1em 0em;
+.top-right-blob {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.bottom-left-blob {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
